@@ -5,6 +5,11 @@ pipeline {
             steps{
                 checkout scm
             }
+        }
+        stage("setup environment") {
+            steps{
+                sh "pip install -r requirements.txt"
+            }
             
         }
         stage("run the code") {
