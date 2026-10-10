@@ -1,4 +1,4 @@
-import padans as pd
+import pandas as pd
 import requests
 
 response = requests.get("https://jsonplaceholder.typicode.com/users")
